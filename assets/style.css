@@ -13,7 +13,7 @@
 .headshot {
   width: 180px;
   height: 180px;
-  border-radius: 999px; /* circular; change to 16px for rounded-rectangle */
+  border-radius: 16px; /* circular; change to 16px for rounded-rectangle */
   object-fit: cover;
   border: 1px solid #e6e6e6;
 }

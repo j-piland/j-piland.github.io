@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications – Your Name</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <style>
+    /* Safe defaults if you haven't added /assets/style.css yet */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+    .container { max-width: 900px; margin: 0 auto; padding: 16px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; }
+    .brand { font-weight: 700; text-decoration: none; color: inherit; }
+    .links a { margin-left: 12px; text-decoration: none; color: inherit; }
+    .pubs { list-style: none; padding-left: 0; }
+    .pubs li { padding: 10px 0; border-bottom: 1px solid #eee; }
+    .pubs .meta a { margin-right: 10px; }
+    .tag { display: inline-block; font-size: 0.85em; padding: 2px 8px; border: 1px solid #ddd; border-radius: 999px; margin-right: 8px; }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="/">Your Name</a>
+      <div class="links">
+        <a href="/cv/">CV</a>
+        <a aria-current="page" href="/publications/">Publications</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Publications</h1>
+    <p>
+      Full list of peer-reviewed publications, preprints, and conference papers.
+      (Your name is bolded.)
+    </p>
+
+    <!-- Optional sections -->
+    <h2>Journal Articles</h2>
+    <ol class="pubs">
+      <!-- Copy/paste this <li> block for each entry -->
+      <li>
+        Author A., <strong>Piland, J.</strong>, Author C. (2025).
+        <span class="title">Paper Title Goes Here</span>.
+        <em>Journal / Venue Name</em>.
+        <span class="meta">
+          <a href="https://doi.org/XXXX">DOI</a>
+          <a href="/assets/papers/paper.pdf">PDF</a>
+          <a href="https://github.com/yourrepo">Code</a>
+        </span>
+      </li>
+    </ol>
+
+    <h2>Conference Papers</h2>
+    <ol class="pubs">
+      <li>
+        Author A., Author B., <strong>Piland, J.</strong> (2024).
+        <span class="title">Conference Paper Title Goes Here</span>.
+        <em>Conference Name / Proceedings</em>.
+        <span class="meta">
+          <a href="https://doi.org/XXXX">DOI</a>
+          <a href="/assets/papers/conference-paper.pdf">PDF</a>
+          <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+        </span>
+      </li>
+    </ol>
+
+    <h2>Preprints</h2>
+    <ol class="pubs">
+      <li>
+        Author A., <strong>Piland, J.</strong> (2023).
+        <span class="title">Preprint Title Goes Here</span>.
+        <em>arXiv</em>.
+        <span class="meta">
+          <a href="https://arxiv.org/abs/XXXX.XXXXX">Link</a>
+        </span>
+      </li>
+    </ol>
+
+    <!-- Tips:
+      - Bold your name exactly like: <strong>Piland, J.</strong>
+      - Italicize the venue/conference/journal like: <em>Venue Name</em>
+      - Keep links optional; delete ones you don't have.
+    -->
+  </main>
+</body>
+</html>
+

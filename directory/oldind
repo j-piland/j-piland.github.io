@@ -41,17 +41,8 @@
             margin-top: 10px;
         }
         
-        .logo-link {
-            display: block;
-            transition: opacity 0.3s ease;
-        }
-        
-        .logo-link:hover {
-            opacity: 0.8;
-        }
-        
         .logo {
-            width: 250px;
+            width: 200px;
             height: auto;
         }
         
@@ -123,10 +114,6 @@
             .demo-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
-            .logo {
-                width: 180px;
-            }
         }
         
         @media (max-width: 768px) {
@@ -146,16 +133,6 @@
                 width: 100px;
                 height: 100px;
             }
-            
-            .logo {
-                width: 150px;
-            }
-            
-            header {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -166,9 +143,8 @@
                 <h1>Trusted Artificial Intelligence</h1>
                 <p class="subtitle">Demos at the ND booth</p>
             </div>
-            <a href="https://cvrl.nd.edu/" class="logo-link" target="_blank">
-                <img src="/directory/images/ndlogo.png" alt="University of Notre Dame" class="logo">
-            </a>
+            <!-- Uncomment and add ND logo path here -->
+            <!-- <img src="/directory/images/nd-logo.png" alt="University of Notre Dame" class="logo"> -->
         </header>
         
         <div class="demo-grid">

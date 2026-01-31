@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trusted Artificial Intelligence - Notre Dame Demos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            color: #1a1a1a;
+            font-size: 3em;
+            font-weight: 300;
+        }
+        
+        .subtitle {
+            color: #5B9BD5;
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .demo-box {
+            background: #E7F3F8;
+            border: 3px dashed #5B9BD5;
+            border-radius: 20px;
+            padding: 40px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            min-height: 300px;
+            cursor: pointer;
+        }
+        
+        .demo-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            background: #d9edf7;
+        }
+        
+        .demo-box h2 {
+            color: #5B9BD5;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .demo-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        
+        .demo-images img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #5B9BD5;
+        }
+        
+        .demo-icon {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        
+        .names {
+            text-align: center;
+            color: #333;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        
+        @media (max-width: 1024px) {
+            .demo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .subtitle {
+                font-size: 1.3em;
+            }
+            
+            .demo-images img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Trusted Artificial Intelligence</h1>
+                <p class="subtitle">Demos at the ND booth</p>
+            </div>
+            <!-- Uncomment and add ND logo path here -->
+            <!-- <img src="/directory/images/nd-logo.png" alt="University of Notre Dame" class="logo"> -->
+        </header>
+        
+        <div class="demo-grid">
+            <!-- Demo 1: Explainable AI -->
+            <a href="/directory/explainable-ai" class="demo-box">
+                <h2>Explainable Artificial Intelligence</h2>
+                <div class="demo-images">
+                    <img src="/directory/images/piland.png" alt="Jacob Piland">
+                    <img src="/directory/images/sweet.png" alt="Chris Sweet">
+                    <img src="/directory/images/box1.png" alt="Explainable AI Icon" class="demo-icon">
+                </div>
+                <p class="names">Jacob Piland &nbsp;&nbsp; Chris Sweet</p>
+            </a>
+            
+            <!-- Demo 2: Human-Machine Teaming -->
+            <a href="/directory/human-machine" class="demo-box">
+                <h2>Human-Machine Teaming</h2>
+                <div class="demo-images">
+                    <img src="/directory/images/dowling.png" alt="Byron Dowling">
+                    <img src="/directory/images/whelpley.png" alt="Joe Whelpley">
+                    <img src="/directory/images/box2.png" alt="Vision Icon" class="demo-icon">
+                </div>
+                <p class="names">Byron Dowling &nbsp;&nbsp; Joe Whelpley</p>
+            </a>
+            
+            <!-- Demo 3: Differentially-Private Generative AI -->
+            <a href="/directory/private-ai" class="demo-box">
+                <h2>Differentially-Private<br>Generative AI</h2>
+                <div class="demo-images">
+                    <img src="/directory/images/giddens.png" alt="Spencer Giddens">
+                    <img src="/directory/images/box3.png" alt="AI Icon" class="demo-icon">
+                </div>
+                <p class="names">Spencer Giddens</p>
+            </a>
+            
+            <!-- Demo 4: Radio Frequency Attacks -->
+            <a href="/directory/rf-attacks" class="demo-box">
+                <h2>Radio Frequency Attacks<br>on Computer Vision</h2>
+                <div class="demo-images">
+                    <img src="/directory/images/fitzsimmons.png" alt="Tyler Fitzsimmons">
+                    <img src="/directory/images/box4.png" alt="RF Icon" class="demo-icon">
+                </div>
+                <p class="names">Tyler Fitzsimmons</p>
+            </a>
+            
+            <!-- Demo 5: Subtle Visual Computing -->
+            <a href="/directory/visual-computing" class="demo-box">
+                <h2>Subtle Visual<br>Computing</h2>
+                <div class="demo-images">
+                    <img src="/directory/images/czajka.png" alt="Adam Czajka">
+                    <img src="/directory/images/box5.png" alt="Health Icon" class="demo-icon">
+                </div>
+                <p class="names">Adam Czajka</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
